@@ -1,5 +1,5 @@
-streamlit
-beautifulsoup4
-requests
-python-dotenv
-google-api-python-client
+google-api-python-client==2.104.0
+requests==2.31.0
+beautifulsoup4==4.12.3
+python-dotenv==1.0.0
+streamlit==1.32.0

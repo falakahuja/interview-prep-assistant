@@ -1,6 +1,21 @@
-__pycache__/
+# Environment files
 .env
-*.pyc
-.DS_Store
+.env.*
+!.env.example  # Keep the example file
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
 venv/
-*.log
+.venv/
+env/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+
+# System files
+.DS_Store

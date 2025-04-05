@@ -1,6 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 from abc import ABC, abstractmethod
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
 
 class BaseScraper(ABC):
     def __init__(self):
@@ -19,8 +23,8 @@ class BaseScraper(ABC):
         
     def _get_page(self, url):
         cookies = {
-            'LEETCODE_SESSION': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfYXV0aF91c2VyX2lkIjoiOTY4MDkyNCIsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMzRjMTEyMTFjM2FiYzRlMGI3NGJiMTkwMjFhMTAzZTIxNDkyYmNiZThkMTIzOThlYmZjZDE1ZDY4YjQ1YjJiMSIsInNlc3Npb25fdXVpZCI6ImI0Mjg2NzViIiwiaWQiOjk2ODA5MjQsImVtYWlsIjoiZmFsYWthaHVqYTAxMDFAZ21haWwuY29tIiwidXNlcm5hbWUiOiJmYWxha2FodWphIiwidXNlcl9zbHVnIjoiZmFsYWthaHVqYSIsImF2YXRhciI6Imh0dHBzOi8vYXNzZXRzLmxlZXRjb2RlLmNvbS91c2Vycy9kZWZhdWx0X2F2YXRhci5qcGciLCJyZWZyZXNoZWRfYXQiOjE3NDMyNzE4MTIsImlwIjoiMTM2LjIzMy45LjEwNiIsImlkZW50aXR5IjoiM2ZhMzFiNTJkZDZlYmM1MTdlNTQ5MmQ0M2Q3N2U2MWMiLCJkZXZpY2Vfd2l0aF9pcCI6WyJlMjBlNzIxMWY0MWRiZTZiMWI2Zjg2ZTVjZGFlMzViMyIsIjEzNi4yMzMuOS4xMDYiXSwiX3Nlc3Npb25fZXhwaXJ5IjoxMjA5NjAwfQ.WCKHgff6CU_34hIUvS3fbmm_g2nEtWPf_fwiF4g3o9o',  # Get from browser dev tools
-            'csrftoken': 'vfrnotRgJeevpw5U6NWEQB951EeDZv2lp1WH3aMe1Qu4kwxgnuFOMI8zQcrQP8DT'             # Optional but recommended
+            'LEETCODE_SESSION': os.getenv('LEETCODE_SESSION'),
+            'csrftoken': os.getenv('CSRF_TOKEN')
         }
         try:
             response = requests.get(url, headers=self.headers, cookies=cookies, timeout=10)
