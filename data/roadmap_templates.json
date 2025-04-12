@@ -1,0 +1,49 @@
+{
+    "software engineer": {
+      "beginner": [
+        { "stage": "Understand Role", "task": "Research job role, key skills, and technologies." },
+        { "stage": "Learn Basics", "task": "Grasp CS fundamentals like DSA, OOP, and DBMS." },
+        { "stage": "Coding Basics", "task": "Practice basic coding problems on platforms like LeetCode, HackerRank." },
+        { "stage": "Learn APIs", "task": "Understand REST APIs and basic web development." },
+        { "stage": "Project Work", "task": "Build simple projects to practice new concepts." }
+      ],
+      "intermediate": [
+        { "stage": "Brush Up Basics", "task": "Review CS fundamentals, including DSA, OOP, and DBMS." },
+        { "stage": "Problem Solving", "task": "Practice problem-solving on platforms like LeetCode, HackerRank." },
+        { "stage": "System Design Basics", "task": "Familiarize yourself with system design principles." },
+        { "stage": "APIs & Backend", "task": "Understand REST APIs and basic backend development." },
+        { "stage": "Build Real-World Apps", "task": "Work on real-world projects to apply skills." }
+      ],
+      "advanced": [
+        { "stage": "Master DSA", "task": "Solve advanced DSA problems efficiently." },
+        { "stage": "Advanced System Design", "task": "Deep dive into high-level system architecture." },
+        { "stage": "Scalability & Optimization", "task": "Learn performance optimization techniques." },
+        { "stage": "Security Best Practices", "task": "Understand secure coding and application security." },
+        { "stage": "Contribute to Open Source", "task": "Collaborate on open-source projects." }
+      ]
+    },
+    "data scientist": {
+      "beginner": [
+        { "stage": "Understand Role", "task": "Learn about the data scientist role and key responsibilities." },
+        { "stage": "Learn Python/R", "task": "Master basic Python or R programming for data manipulation." },
+        { "stage": "Statistics Basics", "task": "Understand basic statistics, probability, and linear algebra." },
+        { "stage": "Data Analysis", "task": "Learn data wrangling, data cleaning, and visualization techniques." },
+        { "stage": "Basic ML Models", "task": "Get familiar with regression, classification, and basic ML models." }
+      ],
+      "intermediate": [
+        { "stage": "Advanced Python/R", "task": "Develop proficiency in Python libraries like NumPy, Pandas, and Matplotlib." },
+        { "stage": "Explore ML Models", "task": "Dive deeper into supervised and unsupervised learning models." },
+        { "stage": "Data Preprocessing", "task": "Master feature engineering and data preprocessing techniques." },
+        { "stage": "Model Evaluation", "task": "Understand model evaluation techniques and hyperparameter tuning." },
+        { "stage": "Deploy Models", "task": "Learn how to deploy models using Flask, Docker, or cloud services." }
+      ],
+      "advanced": [
+        { "stage": "Deep Learning Basics", "task": "Understand neural networks and frameworks like TensorFlow and PyTorch." },
+        { "stage": "NLP & Computer Vision", "task": "Work with advanced concepts in NLP and Computer Vision." },
+        { "stage": "Big Data Tools", "task": "Explore big data technologies like Spark, Hadoop, and SQL optimization." },
+        { "stage": "Model Optimization", "task": "Implement advanced model optimization techniques." },
+        { "stage": "Contribute to Open Source", "task": "Contribute to open-source data science projects." }
+      ]
+    }
+  }
+  
